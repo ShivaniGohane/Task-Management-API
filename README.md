@@ -151,3 +151,55 @@ TaskRepository Methods
     * Parameters: title(Title for filtering), pageable(Pageable object for pagination, sorting, and filtering)
     * Returns: Paginated list of tasks.
 
+# Task Management API Unit Testing
+
+The unit testing suite for the Task Management API focuses on ensuring the correctness and reliability of essential functionalities within the application. The tests cover user-related operations, task creation, updating task details, and task deletion.
+
+Technologies Used for Unit Testing
+
+* JUnit 5: A widely used testing framework for Java applications.
+* SpringBootTest: Annotation from the Spring Boot testing framework for integration testing.
+* AssertJ: A library for fluent assertions in Java unit tests.
+* Unit Testing Class: Project1ApplicationTests
+    
+1. SignUpTest
+    * Method: SignUpTest
+    * Objective: Verify the user signup functionality.
+    * Testing Approach:
+        * Create an expected user object (expectedUser).
+        * Call userService.SignUp to create a user.
+        * Create an actual user object (actualUser) from the returned User1.
+        * Use AssertJ to compare the actual and expected user objects.
+         
+2. Login Test
+    * Method: loginTest
+    * Objective: Verify the user login functionality.
+    * Testing Approach:
+       * Create an expected user object (expectedUser).
+       * Call userService.Login to log in a user.
+       * Create an actual user object (actualUser) from the returned User1.
+       * Use AssertJ to compare specific user attributes.
+3. AddTaskTest
+    * Method: AddTaskTest
+    * Objective: Verify the task creation functionality.
+    * Testing Approach:
+       * Create an expected task object (expectedTask).
+       * Call taskService.createNewTask to create a new task.
+       * Retrieve the task details and create an actual task object (actualTask).
+       * Use AssertJ to compare task attributes.
+4. UpdateTaskTest
+    * Method: upDateTaskTest
+    * Objective: Verify the task updating functionality.
+    * Testing Approach:
+       * Create an expected task object (expectedTask).
+       * Call taskService.updateTaskDetails to update a task.
+       * Retrieve the updated task details and create an actual task object (actualTask).
+       * Use AssertJ to compare updated task attributes.
+5. DeleteTaskTest
+    * Method: DeleteTaskTest
+    * Objective: Verify the task deletion functionality.
+    * Testing Approach:
+       * Define an expected result string (expected).
+       * Call taskService.deleteTask to delete a task.
+       * Retrieve the deletion result and create an actual result string (actual).
+       * Use AssertJ to compare the actual and expected result strings.
