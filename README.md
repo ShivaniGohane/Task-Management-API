@@ -47,7 +47,7 @@ TaskController Endpoints
     * Endpoint: POST /task/updateTask
     * Description: Updates task details and changes the status of a task (e.g., pending, in progress, completed).
     * Request Body: TaskDTO
-    * Request Parameter: Status (New status)
+    * Request Parameter: Status (e.g., pending, In Progress, completed)
     * Response: Returns the updated task or a GeneralMessageDTO with an error message if the task or user does not exist.
 
 4. Delete Task:
