@@ -1,7 +1,7 @@
 # Task-Management-API
 
 # Overview
-The Task Management API is designed to facilitate the management of tasks within an application. It provides endpoints for creating, retrieving, updating, and deleting tasks, as well as additional features such as user authentication, role-based access control, and task filtering and sorting.
+The Task Management API is designed to facilitate the management of tasks within an application. It provides endpoints for creating, retrieving, updating, and deleting tasks, as well as additional features such as user authentication, role-based access control, and task filtering and sorting. This overview includes a focus on the key components and features of the application, with an emphasis on the incorporation of unit testing.
 
 Technologies Used
 * Java
